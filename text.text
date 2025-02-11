@@ -1,0 +1,21 @@
+ rectify and add, below issues and features
+
+A.index.html
+
+1.issue : when i open the index.html the cart page is automatically half opening.
+resolution: make the cart page open only when cart button is clicked.
+2.feature: in cart add total amount just above the close and checkout buttons.
+
+B. checkout.html
+
+1.feature: add a back symbol in go back to menu button.
+2.issue: when an invalid input is given the form will show warning for name, phone number and confirm phone number. but the warning is not visible correctly.
+resolution: keep it in the correct position.
+3. feature: add the table number feature above total quantity as i before mentioned.
+4.feature: take care on checkout button. cause after clicking on that button i want to send the info: name, phone number, table number, ordered items to backend database.
+
+additionally, keep the code clean and organized,  remove unnecessary code and add comments to the code, give class names correctly.
+
+make it ready for future if i want to add additional features such as add items remove items from admin board.
+
+now i will give code update the whole code.

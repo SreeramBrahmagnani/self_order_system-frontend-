@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="checkoutLayout">
+
+        
+        <!-- <div class="returnCart">
+
+          <a href="index.html">Go Back To Menu</a> -->
+          <div class="returnCart">
+            <a href="index.html" class="return1"><--Go Back To Menu</a>
+          
+          
+
+            <h1>Products in Cart</h1>
+            <div class="list">
+
+
+
+            </div>
+        </div>
+
+
+        <div class="right">
+            <h1>Checkout</h1>
+            <form action="" method="POST">
+                <!-- Name Input -->
+                <div class="field name-field">
+                  <div class="input-field">
+                    <input
+                      name="name"
+                      type="text"
+                      placeholder="Enter your Name"
+                      class="name"
+                      maxlength="10"
+                      oninput="validateName(this)"
+                      required
+                    />
+                  </div>
+                  <span class="error name-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Must be at least 3 letters long</p>
+                  </span>
+                </div>
+        
+                <!-- Phone Number Input -->
+                <div class="field phone-field">
+                  <p id="notify">To Get Notify</p>
+                  <div class="input-field">
+                    <input
+                    name="phone"
+                    type="text"
+                    inputmode="numeric"
+                    pattern="\d{10}"
+                    placeholder="Enter your Phone Number"
+                    class="phone"
+                    oninput="validatePhone(this)"
+                    maxlength="10"
+                  />
+                  </div>
+                  <span class="error phone-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Must be 10 digits</p>
+                  </span>
+                </div>
+        
+                <!-- Confirm Phone Number Input -->
+                <div class="field confirm-phone">
+                  <div class="input-field">
+                    <input
+                    type="text"
+                    inputmode="numeric"
+                    pattern="\d{10}"
+                    placeholder="Re-enter your Phone Number"
+                    class="cPhone"
+                    oninput="validateConfirmPhone(this)"
+                    maxlength="10"
+                  />
+                  </div>
+                  <span class="error cPhone-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Phone numbers do not match</p>
+                  </span>
+                </div>
+                <div class="return">
+
+                    <!-- Table Number Input -->
+                    <div class="row">
+                        <div>Table Number</div>
+                        <div>
+                            <input
+                            name="tableNumber"
+                            type="text"
+                            inputmode="numeric"
+                            pattern="\d{3}"
+                            placeholder="000"
+                            class="tableNumber"
+                            maxlength="3"
+                            
+                            
+                            />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div>Total Quantity</div>
+                        <div class="totalQuantity">70</div>
+                    </div>
+                    <div class="row">
+                        <div>Total Price</div>
+                        <div class="totalPrice">$900</div>
+                    </div>
+                </div>
+        
+                <!-- Submit Button -->
+                
+                <div class="input-field button">
+                  <input type="submit" value="Place Order" />
+                </div>
+              </form>
+            
+            </div>
+          
+        
+    
+
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
